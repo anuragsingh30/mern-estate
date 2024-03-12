@@ -5,11 +5,13 @@ import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
 import Profile from "./pages/Profile";
 import About from "./pages/About";
+import Headers from "./components/Headers";
 
 export default function App() {
   // return <h1 className="text-red-500">App</h1>;
   return (
     <BrowserRouter>
+    <Headers />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/sign-in" element={<SignIn />} />
